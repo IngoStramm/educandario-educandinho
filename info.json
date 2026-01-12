@@ -1,7 +1,7 @@
 {
     "name": "Educandário",
     "version": "1.0.1",
-    "download_url": "https://github.com/IngoStramm/educandario-educandinho/raw/master/dist/educandario-educandinho.zip",
+    "download_url": "https://github.com/IngoStramm/educandario-educandinho/raw/refs/heads/main/dist/educandario-educandinho.zip",
     "homepage": "https://agencialaf.com",
     "requires": "4.7",
     "tested": "5.5",
