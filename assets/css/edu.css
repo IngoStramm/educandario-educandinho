@@ -1,0 +1,154 @@
+:root {
+  --azul: #03488e;
+  --bege-claro: #f6f4ed;
+  --branco: #fff;
+  --vermelho: rgb(161, 70, 70);
+  --ff: 'Archivo', Sans-serif;
+}
+
+.edu-post-date-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: var(--ff);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--azul);
+}
+.edu-post-date-filter .edu-select {
+  position: relative;
+  font-family: inherit;
+  min-width: 7em;
+  padding-right: 1.8rem;
+}
+.edu-post-date-filter .edu-select .edu-select-btn {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0.25em 1.5em;
+  cursor: pointer;
+}
+.edu-post-date-filter .edu-select .edu-select-btn .edu-icon {
+  position: absolute;
+  left: 0.25em;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 0.75em;
+  height: 0.75em;
+  pointer-events: none;
+}
+.edu-post-date-filter .edu-select .edu-select-btn .edu-icon path {
+  fill: var(--azul);
+}
+.edu-post-date-filter .edu-select .edu-select-btn .edu-icon-up {
+  display: none;
+}
+.edu-post-date-filter .edu-select .edu-select-btn .edu-icon-down {
+  display: block;
+}
+.edu-post-date-filter .edu-select .edu-clear-btn {
+  display: none;
+  position: absolute;
+  margin-top: 0.1em;
+  top: 50%;
+  right: 0;
+  z-index: 2;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0.25em 1.5em;
+  cursor: pointer;
+  z-index: 2;
+}
+.edu-post-date-filter .edu-select .edu-clear-btn .edu-icon {
+  width: 1.25em;
+  height: 1.25em;
+}
+.edu-post-date-filter .edu-select .edu-clear-btn .edu-icon path {
+  fill: var(--vermelho);
+}
+.edu-post-date-filter .edu-select .edu-select-list {
+  display: block;
+  max-height: 0;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  list-style: none;
+  font-family: inherit;
+  color: var(--azul);
+  background-color: var(--bege-claro);
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 10px;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.edu-post-date-filter .edu-select .edu-select-list li {
+  background-color: transparent;
+  white-space: nowrap;
+  padding: 0.5em 1.2em;
+  cursor: pointer;
+}
+.edu-post-date-filter .edu-select .edu-select-list li:first-child {
+  padding-top: 0.75em;
+}
+.edu-post-date-filter .edu-select .edu-select-list li:last-child {
+  padding-bottom: 0.75em;
+}
+.edu-post-date-filter .edu-select.opened .edu-select-btn .edu-icon-up {
+  display: block;
+}
+.edu-post-date-filter .edu-select.opened .edu-select-btn .edu-icon-down {
+  display: none;
+}
+.edu-post-date-filter .edu-select.opened .edu-select-list {
+  display: block;
+  max-height: 100vh;
+}
+.edu-post-date-filter .edu-select.invalid {
+  box-shadow: 0 0 0.5px 0.5px var(--vermelho);
+  border-radius: 25px;
+}
+.edu-post-date-filter .edu-search-btn {
+  color: var(--azul);
+  font-size: 0.94rem;
+  line-height: 1;
+  padding: 12px 24px;
+  border: 1px solid var(--azul);
+  border-radius: 25px;
+  background-color: var(--branco);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.edu-post-date-filter .edu-search-btn .edu-icon {
+  margin-bottom: -2px;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+.edu-post-date-filter .edu-search-btn:active, .edu-post-date-filter .edu-search-btn:focus, .edu-post-date-filter .edu-search-btn:hover {
+  background-color: var(--bege-claro);
+}
+
+@media (min-width: 768px) {
+  .edu-post-date-filter {
+    justify-content: flex-end;
+  }
+}
+/*# sourceMappingURL=edu.css.map */
