@@ -4,7 +4,7 @@
  * Plugin Name: Educandário/Educandinho
  * Plugin URI: https://agencialaf.com
  * Description: Descrição do Educandário.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Ingo Stramm
  * Text Domain: edu
  * License: GPLv2
